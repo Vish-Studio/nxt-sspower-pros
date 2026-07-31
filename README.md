@@ -1,20 +1,18 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# SS Power Pros
 
-# Run and deploy your AI Studio app
+A polished, high-converting single-page website for a contractor offering electrical, air conditioning, plumbing and home maintenance services.
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1gN_-ElysvTG2gEdtiKdVIviIRb2EK-dO
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
+## Run locally
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Start the Next.js app:
    `npm run dev`
+3. Open http://localhost:3000
+
+## What changed
+
+- Converted the project to a Next.js app router structure
+- Added motion-based reveal animations using Framer Motion
+- Rebuilt the landing page into a conversion-focused single-page experience
+- Organized the UI into kebab-case component files such as hero-section and services-section
