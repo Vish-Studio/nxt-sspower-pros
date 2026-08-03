@@ -10,7 +10,7 @@
     "start": "next start",
     "preview": "next start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out --nojekyll"
+    "deploy": "gh-pages -d out --nojekyll --no-history"
   },
   "dependencies": {
     "@google/genai": "^1.38.0",
