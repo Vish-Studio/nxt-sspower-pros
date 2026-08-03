@@ -9,7 +9,7 @@
     "start": "next start",
     "preview": "next start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out --nojekyll"
   },
   "dependencies": {
     "@google/genai": "^1.38.0",
@@ -27,5 +27,5 @@
     "gh-pages": "^6.3.0",
     "typescript": "~5.8.2"
   },
-  "homepage": "https://vish-studio.github.io/react-sspower-pros"
+  "homepage": "https://vish-studio.github.io/nxt-sspower-pros"
 }

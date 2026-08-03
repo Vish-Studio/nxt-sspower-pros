@@ -24,7 +24,7 @@ export default function HomePage() {
       'Plumbing repairs',
       'Home maintenance',
     ],
-    url: 'https://vish-studio.github.io/react-sspower-pros',
+    url: 'https://vish-studio.github.io/nxt-sspower-pros',
   };
 
   return (
