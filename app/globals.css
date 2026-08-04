@@ -150,13 +150,15 @@ section {
   font-weight: 700;
   line-height: 1;
   transition:
-    transform 180ms ease,
     background 180ms ease,
-    border-color 180ms ease;
+    border-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
 }
 
-.button:hover {
-  transform: translateY(-2px);
+.button__icon {
+  flex: 0 0 auto;
+  transition: transform 180ms ease;
 }
 
 .button--primary {
@@ -166,14 +168,39 @@ section {
   box-shadow: 0 10px 30px rgba(47, 95, 83, 0.22);
 }
 
+.button--primary:hover {
+  background: var(--color-rust-dark);
+  border-color: var(--color-rust-dark);
+  box-shadow: 0 12px 34px rgba(31, 64, 56, 0.24);
+}
+
 .button--secondary {
   background: rgba(253, 253, 253, 0.72);
   color: var(--color-ink);
 }
 
+.button--secondary:hover {
+  background: var(--color-accent-soft);
+  border-color: var(--color-line-strong);
+}
+
 .button--ghost {
   background: transparent;
   color: var(--color-ink);
+}
+
+.button--ghost:hover {
+  background: rgba(253, 253, 253, 0.16);
+  border-color: rgba(253, 253, 253, 0.38);
+  color: var(--color-panel);
+}
+
+.button--has-arrow:hover .button__icon {
+  transform: translateX(4px);
+}
+
+.button--has-up-arrow:hover .button__icon {
+  transform: translate(3px, -3px);
 }
 
 .hero {
@@ -845,6 +872,76 @@ section {
   color: var(--color-rust);
 }
 
+.studio-appreciation {
+  padding-top: clamp(2rem, 5vw, 4rem);
+}
+
+.studio-appreciation__panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.72fr);
+  gap: clamp(1.2rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(1.1rem, 3vw, 2rem);
+  border: 1px solid var(--color-line-strong);
+  border-radius: var(--radius-medium);
+  background: var(--color-accent-soft);
+}
+
+.studio-appreciation__copy h2 {
+  max-width: 720px;
+  margin: 0;
+  font-size: clamp(1.85rem, 3.1vw, 3.2rem);
+  line-height: 1;
+}
+
+.studio-appreciation__copy p {
+  max-width: 640px;
+  margin: 1rem 0 0;
+  color: var(--color-ink-soft);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.studio-appreciation__note {
+  display: block;
+  max-width: 600px;
+  margin-top: 1rem;
+  color: var(--color-rust-dark);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.studio-appreciation__cta {
+  width: fit-content;
+  margin-top: 1.25rem;
+}
+
+.studio-appreciation__offers {
+  display: grid;
+  gap: 0.7rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.studio-appreciation__offers li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+  min-height: 4rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-small);
+  background: rgba(253, 253, 253, 0.72);
+  color: var(--color-ink-soft);
+  font-weight: 800;
+}
+
+.studio-appreciation__offers svg {
+  color: var(--color-rust);
+}
+
 .before-after-section {
   padding-top: 0;
 }
@@ -1203,6 +1300,15 @@ section {
   color: var(--color-panel);
 }
 
+.footer__bottom a.footer__studio-link {
+  color: var(--color-safety-soft);
+  font-weight: 800;
+}
+
+.footer__bottom a.footer__studio-link:hover {
+  color: var(--color-safety);
+}
+
 .footer__bottom {
   display: flex;
   justify-content: space-between;
@@ -1227,6 +1333,7 @@ section {
   .repair-grid,
   .section-heading,
   .proof__grid,
+  .studio-appreciation__panel,
   .cta__panel {
     grid-template-columns: 1fr;
   }

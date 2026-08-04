@@ -6,6 +6,7 @@ import { RecentWorkSection } from '@/components/recent-work-section/recent-work-
 import { RepairSection } from '@/components/repair-section/repair-section';
 import { ServicesSection } from '@/components/services-section/services-section';
 import { SiteNavigation } from '@/components/site-navigation/site-navigation';
+import { StudioAppreciationSection } from '@/components/studio-appreciation-section/studio-appreciation-section';
 import { TestimonialsSection } from '@/components/testimonials-section/testimonials-section';
 import { TrustSection } from '@/components/trust-section/trust-section';
 
@@ -34,9 +35,11 @@ export default function HomePage() {
         <HeroSection />
         <TrustSection />
         <ServicesSection />
+        <StudioAppreciationSection note="After the first three sections, credit goes to the studio behind the site experience." />
         <RecentWorkSection />
         <BeforeAfterSection />
         <TestimonialsSection />
+        <StudioAppreciationSection note="Another nod to the design and development work shaping this booking-focused website." />
         <RepairSection />
         <CtaSection />
       </main>

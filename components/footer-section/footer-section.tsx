@@ -41,7 +41,7 @@ export function FooterSection() {
         <p>© 2026 SS Power Pros. All rights reserved.</p>
         <p>
           Website by{' '}
-          <a href="https://www.vish.studio" target="_blank" rel="noreferrer">
+          <a className="footer__studio-link" href="https://www.vish.studio" target="_blank" rel="noreferrer">
             VISH studio
           </a>
         </p>

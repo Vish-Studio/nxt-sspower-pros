@@ -8,25 +8,25 @@ const services = [
     title: 'Electrical',
     icon: PlugZap,
     copy: 'Repairs, lighting, outlets and safer wiring.',
-    image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=82',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=82',
   },
   {
     title: 'AC',
     icon: Snowflake,
     copy: 'Cooling repairs, tune-ups and installations.',
-    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=82',
+    image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=82',
   },
   {
     title: 'Plumbing',
     icon: Droplets,
     copy: 'Leaks, fixtures, heaters and pipe repairs.',
-    image: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=900&q=82',
+    image: 'https://images.unsplash.com/photo-1749532125405-70950966b0e5?auto=format&fit=crop&w=900&q=82',
   },
   {
     title: 'Maintenance',
     icon: Home,
     copy: 'Small repairs and seasonal home care.',
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=82',
+    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=82',
   },
 ];
 

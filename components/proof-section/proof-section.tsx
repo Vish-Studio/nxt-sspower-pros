@@ -36,7 +36,7 @@ export function ProofSection() {
         <Reveal className="proof-card" direction="right">
           <Image
             className="proof-card__image"
-            src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1300&q=82"
+            src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1300&q=82"
             alt="Contractor using tools for residential repair work"
             fill
             sizes="(max-width: 980px) 100vw, 48vw"

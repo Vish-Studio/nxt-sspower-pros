@@ -16,7 +16,7 @@ export function RepairSection() {
       <div className="container repair-grid">
         <Reveal className="repair-media" direction="left">
           <Image
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=82"
+            src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=1200&q=82"
             alt="Contractor tools ready for home repair service"
             fill
             sizes="(max-width: 980px) 100vw, 45vw"

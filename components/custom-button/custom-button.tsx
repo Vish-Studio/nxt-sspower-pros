@@ -17,10 +17,25 @@ export function CustomButton({
   variant = 'primary',
   className = '',
 }: CustomButtonProps) {
-  const classes = ['button', `button--${variant}`, className].filter(Boolean).join(' ');
+  const iconMeta = Icon as (ComponentType<LucideProps> & {
+    displayName?: string;
+    name?: string;
+  }) | undefined;
+  const iconName = iconMeta ? iconMeta.displayName ?? iconMeta.name ?? '' : '';
+  const hasArrowIcon = iconName.includes('Arrow');
+  const hasUpArrowIcon = iconName.includes('ArrowUp');
+  const classes = [
+    'button',
+    `button--${variant}`,
+    hasArrowIcon ? 'button--has-arrow' : '',
+    hasUpArrowIcon ? 'button--has-up-arrow' : '',
+    className,
+  ]
+    .filter(Boolean)
+    .join(' ');
   const content = (
     <>
-      {Icon ? <Icon size={18} strokeWidth={2.3} aria-hidden="true" /> : null}
+      {Icon ? <Icon className="button__icon" size={18} strokeWidth={2.3} aria-hidden="true" /> : null}
       <span>{children}</span>
     </>
   );
