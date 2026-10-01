@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Urbanist } from 'next/font/google';
 import { LenisProvider } from '@/components/lenis-provider/lenis-provider';
+import { AnalyticsEvents } from '@/components/analytics/analytics-events';
+import { GoogleAnalytics } from '@/components/analytics/google-analytics';
 import { CookieConsent } from '@/components/cookie-consent/cookie-consent';
 import './globals.css';
 
@@ -57,6 +59,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={urbanist.variable}>
       <body className={urbanist.className}>
         <LenisProvider>{children}</LenisProvider>
+        <GoogleAnalytics />
+        <AnalyticsEvents />
         <CookieConsent />
       </body>
     </html>
