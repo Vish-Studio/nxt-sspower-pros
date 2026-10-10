@@ -3,6 +3,8 @@
 /out
 /next-assets
 /.next
+*.tsbuildinfo
+.DS_Store
 
 # env files
 .env.local
