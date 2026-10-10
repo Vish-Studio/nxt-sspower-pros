@@ -3,3 +3,7 @@
 /out
 /next-assets
 /.next
+
+# env files
+.env.local
+.env*.local
