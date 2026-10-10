@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { serviceLandingPages } from "@/components/service-landing-page/service-landing-page";
 
+export const dynamic = "force-static";
+
 const baseUrl = "https://vish-studio.github.io/nxt-sspower-pros";
 
 export default function sitemap(): MetadataRoute.Sitemap {
